@@ -360,14 +360,12 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-top1, top2, top3, top4 = st.columns(4)
+top1, top2, top3 = st.columns(3)
 with top1:
     metric_card("Model Type", "LightGBM + Calibration")
 with top2:
     metric_card("Decision Threshold", f"{THRESHOLD:.2f}")
 with top3:
-    metric_card("Interface", "Redesigned")
-with top4:
     metric_card("Use Case", "Clinical Decision Support")
 
 
